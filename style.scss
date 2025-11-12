@@ -110,7 +110,7 @@
     justify-self: center;
     align-items: center;
     width: 300px;
-    height: 360px;
+    height: 400px;
     background-color: c.$fairy-floss;
   }
   .menu__image {
@@ -124,5 +124,60 @@
   .menu__icons {
     color: c.$spring-forest;
     font-weight: f.$weight-bold;
+  }
+}
+
+.reviews {
+  background-color: c.$peach-amber;
+
+  .reviews__heading {
+    padding-top: 1em;
+    font-family: f.$font-rammetto;
+    color: #fff;
+    text-align: center;
+  }
+  .reviews__container {
+    display: flex;
+    margin: 0 5em;
+    padding: 2em;
+    font-family: f.$font-open-sans;
+  }
+  .reviews__card {
+    margin: 0 2em;
+    padding: 1em;
+    border: 2px solid#fff;
+  }
+
+  .reviews__card-top {
+    display: flex;
+    font-weight: f.$weight-bold;
+    font-style: f.$style-italic;
+    font-size: 0.75em;
+  }
+  // .reviews__quote--right {
+  // }
+  .reviews__card-bottom {
+    display: flex;
+    padding: 0 0.75em;
+    justify-content: space-between;
+    font-size: 0.5em;
+  }
+}
+
+.footer {
+  display: flex;
+  padding: 1.5em 10%;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  background-color: c.$track-green;
+  font-family: f.$font-open-sans;
+  font-size: 0.75em;
+  color: #fff;
+  .footer__icon {
+    font-size: 2em;
+  }
+  .footer__icon--cup {
+    transform: scaleX(-1);
   }
 }

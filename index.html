@@ -31,7 +31,9 @@
         <div class="hero__item-inner">
           <h1 class="hero__title">The Pink Coffee Corner</h1>
           <h3 class="hero__tagline">Best coffee in Melbourne</h3>
-          <button class="hero__button">See Reviews</button>
+          <a href="#reviews-id"
+            ><button class="hero__button">See Reviews</button></a
+          >
         </div>
       </div>
       <div class="hero__item hero__right">
@@ -110,6 +112,7 @@
                   Eggs</span
                 >
               </div>
+              <!-- <div class="menu__card"></div> -->
               <!-- 5 -->
               <div class="menu__card">
                 <img
@@ -166,7 +169,7 @@
                 <h3 class="menu__card-heading">Peanut Butter Smoothie</h3>
                 <span class="menu__tags">
                   <i class="menu__icons fa-solid fa-leaf"></i> Vegan Options
-                  Available </ br>
+                  Available
                   <i class="menu__icons fa-solid fa-hand-dots"></i> Contains
                   Nuts
                 </span>
@@ -175,7 +178,7 @@
           </details>
         </section>
       </section>
-      <section class="section reviews">
+      <section class="section reviews" id="reviews-id">
         <h2 class="reviews__heading">Reviews</h2>
         <div class="reviews__container">
           <div class="reviews__card">
@@ -186,9 +189,8 @@
                 lattes, and friendly staff. The avocado toast is a must-try.
                 Definitely coming back!
               </p>
-              <i class="fa-solid fa-quote-right"></i>
+              <i class="reviews__quote--right fa-solid fa-quote-right"></i>
             </div>
-
             <div class="reviews__card-bottom">
               <p>Sarah L.</p>
               <p>8th July 2024</p>
@@ -203,9 +205,8 @@
                 cake. It can get crowded at lunchtime, but worth the visit for
                 the quality and friendly service.
               </p>
+              <i class="reviews__quote--right fa-solid fa-quote-right"></i>
             </div>
-            <i class="fa-solid fa-quote-right"></i>
-
             <div class="reviews__card-bottom">
               <p>John M.</p>
               <p>8th July 2024</p>
@@ -220,9 +221,8 @@
                 almond croissant, and a welcoming atmosphere. Free Wi-Fi is a
                 bonus. Can’t wait to return!
               </p>
+              <i class="reviews__quote--right fa-solid fa-quote-right"></i>
             </div>
-            <i class="fa-solid fa-quote-right"></i>
-
             <div class="reviews__card-bottom">
               <p>Jenny B.</p>
               <p>4th June 2023</p>
@@ -231,11 +231,15 @@
         </div>
       </section>
     </main>
-    <footer>
-      <a href="#"
-        ><i class="fa-solid fa-mug-hot"><span>Copyright 2024</span></i></a
-      >
-      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+    <footer class="footer">
+      <div class="footer__content">
+        <i class="footer__icon footer__icon--cup fa-solid fa-mug-hot"></i>
+        <span>Copyright 2024</span>
+      </div>
+
+      <div class="footer__content">
+        <i class="footer__icon fa-brands fa-square-instagram"></i>
+      </div>
     </footer>
   </body>
 </html>
