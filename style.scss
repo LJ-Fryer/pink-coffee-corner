@@ -14,6 +14,7 @@
 
 .header {
   display: flex;
+  padding: 0 5em;
   justify-content: space-between;
   align-items: center;
   width: 90vw;
@@ -47,17 +48,17 @@
 
   .hero__item {
     width: 50%;
-    .hero__item-inner {
-      padding: 20%;
-    }
-    .hero__button {
-      margin-top: 1.5em;
-      padding: 12px 36px;
-      color: #fff;
-      font-weight: f.$weight-bold;
-      background-color: c.$spring-forest;
-      border: 2px solid #fff;
-    }
+  }
+  .hero__item-inner {
+    padding: 20%;
+  }
+  .hero__button {
+    margin-top: 1.5em;
+    padding: 12px 36px;
+    color: #fff;
+    font-weight: f.$weight-bold;
+    background-color: c.$spring-forest;
+    border: 2px solid #fff;
   }
   .hero__left {
     background-color: c.$spring-forest;
@@ -69,6 +70,8 @@
   .hero__tagline {
     font-family: f.$font-open-sans;
     font-weight: f.$weight-regular;
+  }
+  .hero__image {
   }
 }
 
@@ -86,10 +89,6 @@
     font-weight: f.$weight-bold;
     font-size: 2.25em;
   }
-
-  // .menu__dropdown {
-  // }
-
   .menu__summary {
     padding: 0.5em 1.5em;
     background-color: c.$fairy-floss;

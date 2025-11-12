@@ -7,6 +7,7 @@
 
 .header {
   display: flex;
+  padding: 0 5em;
   justify-content: space-between;
   align-items: center;
   width: 90vw;
@@ -37,10 +38,10 @@
 .hero .hero__item {
   width: 50%;
 }
-.hero .hero__item .hero__item-inner {
+.hero .hero__item-inner {
   padding: 20%;
 }
-.hero .hero__item .hero__button {
+.hero .hero__button {
   margin-top: 1.5em;
   padding: 12px 36px;
   color: #fff;
@@ -59,7 +60,6 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
-
 .menu {
   display: flex;
   flex-direction: column;
