@@ -1,3 +1,70 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+}
+.header .header__icon {
+  color: #faa196;
+  font-size: 36px;
+  transform: scaleX(-1);
+}
+.header .header__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+.header .header__nav .header__nav-link {
+  font-size: 0.8em;
+  color: #404040;
+  text-decoration: none;
+}
 
+.hero {
+  display: flex;
+}
+.hero .hero__item {
+  width: 50%;
+}
+.hero .hero__item .hero__item-inner {
+  padding: 20%;
+}
+.hero .hero__item .hero__button {
+  margin-top: 1.5em;
+  padding: 12px 36px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #689572;
+  border: 2px solid #fff;
+}
+.hero .hero__left {
+  background-color: #689572;
+  color: #fff;
+}
+.hero .hero__title {
+  font-family: "Rammetto One", cursive;
+}
+.hero .hero__tagline {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+  color: #404040;
+}
+.menu .menu__title {
+  font-family: "Rammetto One", cursive;
+  color: #faa196;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.25em;
+}
+.menu .menu__dropdown-summary {
+  padding: 0.5em 0;
+  background-color: #ebc9c4;
+}
 
 /*# sourceMappingURL=style.css.map */

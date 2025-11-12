@@ -17,118 +17,159 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <a href="#home"><i class="fa-solid fa-mug-hot"></i></a>
-      <nav>
-        <a href="#aboutSection">About</a>
-        <a a href="#contactSection">Contact</a>
+    <header class="header">
+      <a href="#home" class="header__icon"
+        ><i class="active fa-solid fa-mug-hot"></i
+      ></a>
+      <nav class="header__nav">
+        <a href="#aboutSection" class="header__nav-link">ABOUT</a>
+        <a a href="#contactSection" class="header__nav-link">CONTACT</a>
       </nav>
-      <section class="hero">
-        <div>
-          <h1>The Pink Coffee Corner</h1>
-          <h3>Best coffee in Melbourne</h3>
-          <button>See Reviews</button>
-        </div>
-        <div>
-          <img src="./images/hero_image.jpg" alt="" />
-        </div>
-      </section>
     </header>
-    <main class="menu">
-      <h2 class="menu-title">Our Menu</h2>
-      <!-- FOOD SECTION -->
-      <section class="food">
-        <div class="menu-category">
-          <button class="menu-category__toggle">Food ▾</button>
-          <div class="menu-category__content">
-            <!-- 1 -->
-            <div class="menu-item">
-              <img
-                src="./images/chocolate_cupcake.jpg"
-                alt="Chocolate Cupcake"
-              />
-              <h3>Chocolate Cupcake</h3>
-              <p class="item-tags"><i class="fa-solid fa-leaf"></i> Vegan</p>
-            </div>
-            <!-- 2 -->
-            <div class="menu-item">
-              <img src="./images/donuts.jpg" alt="Donuts" />
-              <h3>Donuts</h3>
-              <p class="item-tags">
-                <i class="fa-solid fa-wheat-awn-circle-exclamation"></i> Gluten
-                Free
-              </p>
-            </div>
-            <!-- 3 -->
-            <div class="menu-item">
-              <img
-                src="./images/raspberry_cupcake.jpg"
-                alt="Raspberry Cupcake"
-              />
-              <h3>Raspberry Cupcake</h3>
-              <p class="item-tags"><i class="fa-solid fa-leaf"></i> Vegan</p>
-              <p class="item-tags">
-                <i class="fa-solid fa-wheat-awn-circle-exclamation"></i> Gluten
-                Free
-              </p>
-            </div>
-            <!-- 4 -->
-            <div class="menu-item">
-              <img src="./images/vanilla_cake.jpg" alt="Vanilla Cake" />
-              <h3>Vanilla Cake</h3>
-              <p class="item-tags">
-                <i class="fa-solid fa-egg"></i> Contains Eggs
-              </p>
-            </div>
-            <!-- 5 -->
-            <div class="menu-item">
-              <img src="./images/cheesecake.jpg" alt="Cheesecakee" />
-              <h3>Cheesecake</h3>
+    <section class="hero">
+      <div class="hero__item hero__left">
+        <div class="hero__item-inner">
+          <h1 class="hero__title">The Pink Coffee Corner</h1>
+          <h3 class="hero__tagline">Best coffee in Melbourne</h3>
+          <button class="hero__button">See Reviews</button>
+        </div>
+      </div>
+      <div class="hero__item hero__right">
+        <img
+          src="./images/hero_image.jpg"
+          alt="Sunlit cafe with tall windows and a view of trees"
+          class="hero__image"
+        />
+      </div>
+    </section>
 
-              <p class="item-tags">
-                <i class="fa-solid fa-egg"></i> Contains Eggs
-              </p>
-              <p class="item-tags">
-                <i class="fa-solid fa-cow"></i> Contains Dairy
-              </p>
-            </div>
-          </div>
+    <main>
+      <section class="menu">
+        <div class="menu__heading">
+          <h2 class="menu__title">Our Menu</h2>
         </div>
-      </section>
-      <section>
+
+        <!-- FOOD SECTION -->
+        <section class="menu__food">
+          <details class="menu__dropdown">
+            <summary class="menu__dropdown-summary">Food</summary>
+            <div class="menu__dropdown-options">
+              <!-- 1 -->
+              <div class="menu__dropdown-item">
+                <img
+                  src="./images/chocolate_cupcake.jpg"
+                  alt="Chocolate Cupcake"
+                  class="menu__dropdown-image"
+                />
+                <h3>Chocolate Cupcake</h3>
+                <p class="item-tags"><i class="fa-solid fa-leaf"></i> Vegan</p>
+              </div>
+              <!-- 2 -->
+              <div class="menu__dropdown-item">
+                <img
+                  src="./images/donuts.jpg"
+                  alt="Donuts"
+                  class="menu__dropdown-image"
+                />
+                <h3>Donuts</h3>
+                <p class="item-tags">
+                  <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
+                  Gluten Free
+                </p>
+              </div>
+              <!-- 3 -->
+              <div class="menu__dropdown-item">
+                <img
+                  src="./images/raspberry_cupcake.jpg"
+                  alt="Raspberry Cupcake"
+                  class="menu__dropdown-image"
+                />
+                <h3>Raspberry Cupcake</h3>
+                <p class="item-tags"><i class="fa-solid fa-leaf"></i> Vegan</p>
+                <p class="item-tags">
+                  <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
+                  Gluten Free
+                </p>
+              </div>
+              <!-- 4 -->
+              <div class="menu__dropdown-item">
+                <img
+                  src="./images/vanilla_cake.jpg"
+                  alt="Vanilla Cake"
+                  class="menu__dropdown-image"
+                />
+                <h3>Vanilla Cake</h3>
+                <p class="item-tags">
+                  <i class="fa-solid fa-egg"></i> Contains Eggs
+                </p>
+              </div>
+              <!-- 5 -->
+              <div class="menu__dropdown-item">
+                <img
+                  src="./images/cheesecake.jpg"
+                  alt="Cheesecakee"
+                  class="menu__dropdown-image"
+                />
+                <h3>Cheesecake</h3>
+
+                <p class="item-tags">
+                  <i class="fa-solid fa-egg"></i> Contains Eggs
+                </p>
+                <p class="item-tags">
+                  <i class="fa-solid fa-cow"></i> Contains Dairy
+                </p>
+              </div>
+            </div>
+          </details>
+        </section>
+
         <!-- DRINKS SECTION -->
-        <div class="menu-category">
-          <button class="menu-category__toggle">Drinks ▾</button>
-          <div class="menu-category__content">
-            <div class="menu-item">
-              <img src="./images/coffee.jpg" alt="Flat White" />
-              <h3>Flat White</h3>
-              <p class="item-tags">
-                <i class="fa-solid fa-leaf"></i> Vegan Options Available
-              </p>
+        <section class="menu__drinks">
+          <details class="menu__dropdown">
+            <summary class="menu__dropdown-summary">Drinks</summary>
+            <div class="menu__dropdown-options">
+              <div class="menu__dropdown-item">
+                <img
+                  src="./images/coffee.jpg"
+                  alt="Flat White"
+                  class="menu__dropdown-image"
+                />
+                <h3>Flat White</h3>
+                <p class="item-tags">
+                  <i class="fa-solid fa-leaf"></i> Vegan Options Available
+                </p>
+              </div>
+              <div class="menu__dropdown-item">
+                <img
+                  src="./images/green_smoothie.jpg"
+                  alt="Green Smoothie"
+                  class="menu__dropdown-image"
+                />
+                <h3>Green Smoothie</h3>
+                <p class="item-tags">
+                  <i class="fa-solid fa-leaf"></i> Vegan Options Available
+                </p>
+              </div>
+              <div class="menu__dropdown-item">
+                <img
+                  src="./images/peanut_smoothie.jpg"
+                  alt="Green Smoothie"
+                  class="menu__dropdown-image"
+                />
+                <h3>Peanut Butter Smoothie</h3>
+                <p class="item-tags">
+                  <i class="fa-solid fa-leaf"></i> Vegan Options Available
+                </p>
+                <p class="item-tags">
+                  <i class="fa-solid fa-hand-dots"></i> Contains Nuts
+                </p>
+              </div>
             </div>
-            <div class="menu-item">
-              <img src="./images/green_smoothie.jpg" alt="Green Smoothie" />
-              <h3>Green Smoothie</h3>
-              <p class="item-tags">
-                <i class="fa-solid fa-leaf"></i> Vegan Options Available
-              </p>
-            </div>
-            <div class="menu-item">
-              <img src="./images/peanut_smoothie.jpg" alt="Green Smoothie" />
-              <h3>Peanut Butter Smoothie</h3>
-              <p class="item-tags">
-                <i class="fa-solid fa-leaf"></i> Vegan Options Available
-              </p>
-              <p class="item-tags">
-                <i class="fa-solid fa-hand-dots"></i> Contains Nuts
-              </p>
-            </div>
-          </div>
-        </div>
+          </details>
+        </section>
       </section>
       <section class="reviews">
-        <h2>Reviews</h2>
+        <h2 class="reviews__heading">Reviews</h2>
         <div class="reviews__container">
           <div class="reviews__card">
             <div class="reviews__card-top">

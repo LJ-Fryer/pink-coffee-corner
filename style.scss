@@ -1,5 +1,81 @@
-@use "./partials/colors";
+@use "./partials/colors" as c;
+@use "./partials/fonts" as f;
 
 // section {
 //   display: flex;
 // }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+
+  .header__icon {
+    color: c.$peach-amber;
+    font-size: 36px;
+    transform: scaleX(-1);
+  }
+
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+
+    .header__nav-link {
+      font-size: 0.8em;
+      color: c.$bauhaus;
+      text-decoration: none;
+    }
+  }
+}
+// HERO
+.hero {
+  display: flex;
+
+  .hero__item {
+    width: 50%;
+    .hero__item-inner {
+      padding: 20%;
+    }
+    .hero__button {
+      margin-top: 1.5em;
+      padding: 12px 36px;
+      color: #fff;
+      font-weight: f.$weight-bold;
+      background-color: c.$spring-forest;
+      border: 2px solid #fff;
+    }
+  }
+  .hero__left {
+    background-color: c.$spring-forest;
+    color: #fff;
+  }
+  .hero__title {
+    font-family: f.$font-rammetto;
+  }
+  .hero__tagline {
+    font-family: f.$font-open-sans;
+    font-weight: f.$weight-regular;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+  color: c.$bauhaus;
+
+  .menu__title {
+    font-family: f.$font-rammetto;
+    color: c.$peach-amber;
+    text-align: center;
+    font-weight: f.$weight-bold;
+    font-size: 2.25em;
+  }
+
+  .menu__dropdown-summary {
+    padding: 0.5em 0;
+    background-color: c.$fairy-floss;
+  }
+}
