@@ -28,7 +28,7 @@
     </header>
     <section class="section hero">
       <div class="hero__item hero__left">
-        <div class="hero__item-inner">
+        <div class="hero__inner">
           <h1 class="hero__title">The Pink Coffee Corner</h1>
           <h3 class="hero__tagline">Best coffee in Melbourne</h3>
           <a href="#reviews-id"
@@ -53,7 +53,7 @@
 
         <!-- FOOD SECTION -->
         <section class="section menu__food">
-          <details class="menu__dropdown">
+          <details>
             <summary class="menu__summary">Food</summary>
             <div class="menu__container">
               <!-- 1 -->
@@ -64,9 +64,9 @@
                   class="menu__image"
                 />
                 <h3 class="menu__card-heading">Chocolate Cupcake</h3>
-                <span class="menu__tags"
-                  ><i class="menu__icons fa-solid fa-leaf"></i> Vegan</span
-                >
+                <div class="menu__tags">
+                  <p><i class="menu__icons fa-solid fa-leaf"></i> Vegan</p>
+                </div>
               </div>
               <!-- 2 -->
               <div class="menu__card">
@@ -76,12 +76,14 @@
                   class="menu__image"
                 />
                 <h3 class="menu__card-heading">Donuts</h3>
-                <span class="menu__tags"
-                  ><i
-                    class="menu__icons fa-solid fa-wheat-awn-circle-exclamation"
-                  ></i>
-                  Gluten Free</span
-                >
+                <div class="menu__tags">
+                  <p>
+                    <i
+                      class="menu__icons fa-solid fa-wheat-awn-circle-exclamation"
+                    ></i>
+                    Gluten Free
+                  </p>
+                </div>
               </div>
               <!-- 3 -->
               <div class="menu__card">
@@ -91,13 +93,15 @@
                   class="menu__image"
                 />
                 <h3 class="menu__card-heading">Raspberry Cupcake</h3>
-                <span class="menu__tags"
-                  ><i class="menu__icons fa-solid fa-leaf"></i> Vegan
-                  <i
-                    class="menu__icons fa-solid fa-wheat-awn-circle-exclamation"
-                  ></i>
-                  Gluten Free</span
-                >
+                <div class="menu__tags flex">
+                  <p><i class="menu__icons fa-solid fa-leaf"></i> Vegan</p>
+                  <p>
+                    <i
+                      class="menu__icons fa-solid fa-wheat-awn-circle-exclamation"
+                    ></i>
+                    Gluten Free
+                  </p>
+                </div>
               </div>
               <!-- 4 -->
               <div class="menu__card">
@@ -107,25 +111,29 @@
                   class="menu__image"
                 />
                 <h3 class="menu__card-heading">Vanilla Cake</h3>
-                <span class="menu__tags"
-                  ><i class="menu__icons fa-solid fa-egg"></i> Contains
-                  Eggs</span
-                >
+                <div class="menu__tags">
+                  <p>
+                    <i class="menu__icons fa-solid fa-egg"></i> Contains Eggs
+                  </p>
+                </div>
               </div>
               <!-- <div class="menu__card"></div> -->
               <!-- 5 -->
               <div class="menu__card">
                 <img
                   src="./images/cheesecake.jpg"
-                  alt="Cheesecakee"
+                  alt="Cheesecake"
                   class="menu__image"
                 />
                 <h3 class="menu__card-heading">Cheesecake</h3>
-                <span class="menu__tags"
-                  ><i class="menu__icons fa-solid fa-egg"></i> Contains Eggs
-                  <i class="menu__icons fa-solid fa-cow"></i> Contains
-                  Dairy</span
-                >
+                <div class="menu__tags flex">
+                  <p>
+                    <i class="menu__icons fa-solid fa-egg"></i> Contains Eggs
+                  </p>
+                  <p>
+                    <i class="menu__icons fa-solid fa-cow"></i> Contains Dairy
+                  </p>
+                </div>
               </div>
             </div>
           </details>
@@ -133,7 +141,7 @@
 
         <!-- DRINKS SECTION -->
         <section class="section menu__drinks">
-          <details class="menu__dropdown">
+          <details>
             <summary class="menu__summary">Drinks</summary>
             <div class="menu__container">
               <div class="menu__card">
@@ -143,10 +151,12 @@
                   class="menu__image"
                 />
                 <h3 class="menu__card-heading">Flat White</h3>
-                <span class="menu__tags"
-                  ><i class="menu__icons fa-solid fa-leaf"></i> Vegan Options
-                  Available</span
-                >
+                <div class="menu__tags">
+                  <span
+                    ><i class="menu__icons fa-solid fa-leaf"></i> Vegan Options
+                    Available</span
+                  >
+                </div>
               </div>
               <div class="menu__card">
                 <img
@@ -155,10 +165,12 @@
                   class="menu__image"
                 />
                 <h3 class="menu__card-heading">Green Smoothie</h3>
-                <span class="menu__tags">
-                  <i class="menu__icons fa-solid fa-leaf"></i> Vegan Options
-                  Available
-                </span>
+                <div class="menu__tags">
+                  <span>
+                    <i class="menu__icons fa-solid fa-leaf"></i> Vegan Options
+                    Available
+                  </span>
+                </div>
               </div>
               <div class="menu__card">
                 <img
@@ -167,12 +179,16 @@
                   class="menu__image"
                 />
                 <h3 class="menu__card-heading">Peanut Butter Smoothie</h3>
-                <span class="menu__tags">
-                  <i class="menu__icons fa-solid fa-leaf"></i> Vegan Options
-                  Available
-                  <i class="menu__icons fa-solid fa-hand-dots"></i> Contains
-                  Nuts
-                </span>
+                <div class="menu__tags wrap">
+                  <p>
+                    <i class="menu__icons fa-solid fa-leaf"></i> Vegan Options
+                    Available
+                  </p>
+                  <p>
+                    <i class="menu__icons fa-solid fa-hand-dots"></i> Contains
+                    Nuts
+                  </p>
+                </div>
               </div>
             </div>
           </details>
@@ -182,48 +198,48 @@
         <h2 class="reviews__heading">Reviews</h2>
         <div class="reviews__container">
           <div class="reviews__card">
-            <div class="reviews__card-top">
+            <div class="reviews__top">
               <i class="fa-solid fa-quote-left"></i>
-              <p>
+              <p class="reviews--padding">
                 The Pink Coffee Corner is amazing! Cozy ambiance, perfect
                 lattes, and friendly staff. The avocado toast is a must-try.
                 Definitely coming back!
               </p>
               <i class="reviews__quote--right fa-solid fa-quote-right"></i>
             </div>
-            <div class="reviews__card-bottom">
+            <div class="reviews__bottom">
               <p>Sarah L.</p>
               <p>8th July 2024</p>
             </div>
           </div>
 
           <div class="reviews__card">
-            <div class="reviews__card-top">
+            <div class="reviews__top">
               <i class="fa-solid fa-quote-left"></i>
-              <p>
+              <p class="reviews--padding">
                 Great spot for coffee lovers. Smooth flat, white and delicious
                 cake. It can get crowded at lunchtime, but worth the visit for
                 the quality and friendly service.
               </p>
               <i class="reviews__quote--right fa-solid fa-quote-right"></i>
             </div>
-            <div class="reviews__card-bottom">
+            <div class="reviews__bottom">
               <p>John M.</p>
               <p>8th July 2024</p>
             </div>
           </div>
 
           <div class="reviews__card">
-            <div class="reviews__card-top">
+            <div class="reviews__top">
               <i class="fa-solid fa-quote-left"></i>
-              <p>
+              <p class="reviews--padding">
                 The pink coffee corner is my favourite! Perfect mocha, tasty
                 almond croissant, and a welcoming atmosphere. Free Wi-Fi is a
                 bonus. Can’t wait to return!
               </p>
               <i class="reviews__quote--right fa-solid fa-quote-right"></i>
             </div>
-            <div class="reviews__card-bottom">
+            <div class="reviews__bottom">
               <p>Jenny B.</p>
               <p>4th June 2023</p>
             </div>

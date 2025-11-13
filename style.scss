@@ -8,12 +8,14 @@
 *,
 *::before,
 *::after {
+  margin: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
-
+// HEADER
 .header {
   display: flex;
+  margin-top: 1em;
   padding: 0 5em;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +23,7 @@
 
   .header__icon {
     color: c.$peach-amber;
-    font-size: 36px;
+    font-size: 2em;
     transform: scaleX(-1);
   }
 
@@ -50,9 +52,16 @@
   .hero__item {
     width: 50%;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .hero__item-inner {
-    padding: 20%;
+  .hero__inner {
+    width: 70%;
+  }
+  .hero__left {
+    background-color: c.$spring-forest;
+    color: #fff;
   }
   .hero__button {
     margin-top: 1.5em;
@@ -62,12 +71,10 @@
     background-color: c.$spring-forest;
     border: 2px solid #fff;
   }
-  .hero__left {
-    background-color: c.$spring-forest;
-    color: #fff;
-  }
+
   .hero__title {
     font-family: f.$font-rammetto;
+    font-size: 2.75em;
   }
   .hero__tagline {
     font-family: f.$font-open-sans;
@@ -79,7 +86,7 @@
     object-fit: cover;
   }
 }
-
+// MENU
 .menu {
   display: flex;
   flex-direction: column;
@@ -113,24 +120,31 @@
     flex-direction: column;
     justify-self: center;
     align-items: center;
-    width: 300px;
-    height: 400px;
+    width: 30%;
+    height: 420px;
     background-color: c.$fairy-floss;
   }
   .menu__image {
     max-width: 90%;
     height: auto;
-    padding: 15px 5px 5px;
+    padding: 15px 5px 20px;
   }
   .menu__tags {
+    margin-top: 1em;
     font-size: 0.75em;
+    text-align: center;
   }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .menu__icons {
     color: c.$spring-forest;
     font-weight: f.$weight-bold;
   }
 }
-
+// REVIEWS
 .reviews {
   background-color: c.$peach-amber;
 
@@ -152,22 +166,26 @@
     border: 2px solid#fff;
   }
 
-  .reviews__card-top {
+  .reviews__top {
     display: flex;
     font-weight: f.$weight-bold;
     font-style: f.$style-italic;
     font-size: 0.75em;
   }
+  .reviews--padding {
+    padding: 0 10px;
+    text-align: center;
+  }
   // .reviews__quote--right {
   // }
-  .reviews__card-bottom {
+  .reviews__bottom {
     display: flex;
     padding: 0 0.75em;
     justify-content: space-between;
     font-size: 0.5em;
   }
 }
-
+// FOOTER
 .footer {
   display: flex;
   padding: 1.5em 10%;

@@ -1,12 +1,14 @@
 *,
 *::before,
 *::after {
+  margin: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
 
 .header {
   display: flex;
+  margin-top: 1em;
   padding: 0 5em;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +16,7 @@
 }
 .header .header__icon {
   color: #faa196;
-  font-size: 36px;
+  font-size: 2em;
   transform: scaleX(-1);
 }
 .header .header__nav {
@@ -39,9 +41,16 @@
 .hero .hero__item {
   width: 50%;
   height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.hero .hero__item-inner {
-  padding: 20%;
+.hero .hero__inner {
+  width: 70%;
+}
+.hero .hero__left {
+  background-color: #689572;
+  color: #fff;
 }
 .hero .hero__button {
   margin-top: 1.5em;
@@ -51,12 +60,9 @@
   background-color: #689572;
   border: 2px solid #fff;
 }
-.hero .hero__left {
-  background-color: #689572;
-  color: #fff;
-}
 .hero .hero__title {
   font-family: "Rammetto One", cursive;
+  font-size: 2.75em;
 }
 .hero .hero__tagline {
   font-family: "Open Sans", sans-serif;
@@ -101,17 +107,23 @@
   flex-direction: column;
   justify-self: center;
   align-items: center;
-  width: 300px;
-  height: 400px;
+  width: 30%;
+  height: 420px;
   background-color: #ebc9c4;
 }
 .menu .menu__image {
   max-width: 90%;
   height: auto;
-  padding: 15px 5px 5px;
+  padding: 15px 5px 20px;
 }
 .menu .menu__tags {
+  margin-top: 1em;
   font-size: 0.75em;
+  text-align: center;
+}
+.menu .flex {
+  display: flex;
+  justify-content: space-between;
 }
 .menu .menu__icons {
   color: #689572;
@@ -138,13 +150,17 @@
   padding: 1em;
   border: 2px solid #fff;
 }
-.reviews .reviews__card-top {
+.reviews .reviews__top {
   display: flex;
   font-weight: 700;
   font-style: italic;
   font-size: 0.75em;
 }
-.reviews .reviews__card-bottom {
+.reviews .reviews--padding {
+  padding: 0 10px;
+  text-align: center;
+}
+.reviews .reviews__bottom {
   display: flex;
   padding: 0 0.75em;
   justify-content: space-between;
