@@ -1,0 +1,59 @@
+@use "./colors" as c;
+@use "./fonts" as f;
+@use "./mixins" as m;
+
+// MENU
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+  padding: 0 10%;
+  font-family: f.$font-open-sans;
+  color: c.$bauhaus;
+
+  &__title {
+    font-family: f.$font-rammetto;
+    color: c.$peach-amber;
+    text-align: center;
+    font-weight: f.$weight-bold;
+    font-size: 2.25em;
+  }
+  &__category {
+    margin-top: 1.5em;
+  }
+  &__summary {
+    padding: 0.5em 1.5em;
+    background-color: c.$fairy-floss;
+    font-family: f.$font-open-sans;
+    color: c.$bauhaus;
+    font-weight: f.$weight-bold;
+  }
+  &__list {
+    @include m.flex-center(center, normal);
+    margin: 10px;
+    flex-wrap: wrap;
+
+    gap: 20px;
+  }
+  &__item {
+    @include m.flex-center(column);
+    width: 30%;
+    height: 420px;
+    background-color: c.$fairy-floss;
+  }
+  &__item-image {
+    max-width: 90%;
+    height: auto;
+    padding: 15px 5px 20px;
+  }
+  &__item-tags {
+    margin-top: 1em;
+    font-size: 0.75em;
+    text-align: center;
+  }
+
+  &__icon {
+    color: c.$spring-forest;
+    font-weight: f.$weight-bold;
+  }
+}

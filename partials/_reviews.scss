@@ -1,0 +1,49 @@
+@use "./colors" as c;
+@use "./fonts" as f;
+@use "./mixins" as m;
+
+// REVIEWS
+.reviews {
+  height: 80vh;
+  background-color: c.$peach-amber;
+  margin-top: 2em;
+
+  &__title {
+    padding-top: 1em;
+    font-family: f.$font-rammetto;
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+  }
+  &__list {
+    @include m.flex-center;
+    flex-wrap: wrap;
+    margin: 0 5em;
+    padding: 0.5em;
+    font-family: f.$font-open-sans;
+    color: c.$bauhaus;
+  }
+  &__item {
+    width: 45%;
+    margin: 0.5em;
+    padding: 1em;
+    border: 2px solid#fff;
+  }
+  &__quote {
+    display: flex;
+  }
+  &__text {
+    padding: 0 10px;
+    text-align: center;
+    font-weight: f.$weight-bold;
+    font-style: f.$style-italic;
+    font-size: 1em;
+  }
+
+  &__meta {
+    @include m.flex-center(center, space-between);
+    margin-top: 1em;
+    padding: 0 0.75em;
+    font-size: 0.75em;
+  }
+}

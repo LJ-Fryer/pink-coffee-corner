@@ -1,0 +1,29 @@
+@use "./colors" as c;
+@use "./fonts" as f;
+@use "./mixins" as m;
+
+// HEADER
+.header {
+  @include m.flex-center(row, space-between);
+  margin-top: 1em;
+  padding: 0 5em;
+  width: 90vw;
+
+  &__logo {
+    color: c.$peach-amber;
+    font-size: 2em;
+    transform: scaleX(-1);
+  }
+
+  &__nav {
+    @include m.flex-center(center, space-between);
+    width: 20%;
+
+    &__nav-link {
+      font-size: 0.75em;
+      font-weight: f.$weight-bold;
+      color: c.$bauhaus;
+      text-decoration: none;
+    }
+  }
+}

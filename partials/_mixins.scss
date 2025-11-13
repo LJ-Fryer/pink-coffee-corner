@@ -1,0 +1,44 @@
+@use "./colors" as c;
+@use "./fonts" as f;
+
+// Center content with flexbox
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Reusable button style
+@mixin button(
+  $padding: 0.5em 1em,
+  $bg-color: c.$spring-forest,
+  $text-color: #fff,
+  $font-weight: 700
+) {
+  padding: $padding;
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: f.$font-open-sans;
+  font-weight: f.$weight-bold;
+  border: 3px solid $text-color;
+  text-align: center;
+  cursor: pointer;
+}
+
+@mixin hero-content(
+  $width: 50%,
+  $height: auto,
+  $background-color: c.$spring-forest,
+  $color: #fff
+) {
+  width: $width;
+  height: $height;
+  background-color: $background-color;
+  color: $color;
+}
+
+@mixin hero-title($font-family: f.$font-rammetto, $font-size: 2.75em) {
+  font-family: $font-family;
+  font-size: $font-size;
+}

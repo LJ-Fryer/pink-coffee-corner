@@ -1,0 +1,41 @@
+@use "./colors" as c;
+@use "./fonts" as f;
+@use "./mixins" as m;
+
+// HERO
+.hero {
+  display: flex;
+  margin-top: 1em;
+  height: 90vh;
+
+  &__content {
+    @include m.flex-center;
+    @include m.hero-content;
+  }
+  &__inner {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button {
+    @include m.button();
+    margin-top: 1.5em;
+    width: 40%;
+    height: auto;
+    font-size: 1em;
+  }
+
+  &__title {
+    @include m.hero-title;
+  }
+  &__tagline {
+    font-family: f.$font-open-sans;
+    font-weight: f.$weight-regular;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

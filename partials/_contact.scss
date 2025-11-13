@@ -1,0 +1,52 @@
+@use "./colors" as c;
+@use "./fonts" as f;
+@use "./mixins" as m;
+
+// CONTACT PAGE
+.contact {
+  display: flex;
+  margin-top: 1em;
+  height: 90vh;
+
+  &__content {
+    @include m.flex-center;
+    @include m.hero-content;
+  }
+  &__inner {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    @include m.hero-title;
+  }
+
+  &__container {
+    display: flex;
+    @include m.hero-content;
+  }
+  &__tagline {
+    font-family: f.$font-open-sans;
+    font-weight: f.$weight-regular;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__form-list {
+    list-style: none;
+    margin-right: 0;
+    padding: 0;
+  }
+  &__item {
+    margin-top: 0.5em;
+  }
+  &__label {
+    margin-top: 5em;
+  }
+  &__button {
+    @include m.button;
+    border-radius: 5px;
+  }
+}

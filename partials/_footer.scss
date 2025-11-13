@@ -1,0 +1,21 @@
+@use "./colors" as c;
+@use "./fonts" as f;
+@use "./mixins" as m;
+
+// FOOTER
+.footer {
+  @include m.flex-center(center, space-between);
+  padding: 1.5em 10%;
+  width: 100vw;
+  background-color: c.$track-green;
+  font-family: f.$font-open-sans;
+  font-size: 1em;
+  color: #fff;
+  &__icon {
+    font-size: 2.25em;
+    color: #fff;
+  }
+  &__icon--cup {
+    transform: scaleX(-1);
+  }
+}
