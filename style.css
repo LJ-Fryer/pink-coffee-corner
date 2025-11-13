@@ -34,6 +34,7 @@
 .hero {
   display: flex;
   margin-top: 1em;
+  height: 90vh;
 }
 .hero .hero__content {
   width: 50%;
@@ -41,15 +42,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #689572;
+  color: #fff;
 }
 .hero .hero__inner {
   width: 70%;
   display: flex;
   flex-direction: column;
-}
-.hero .hero__left {
-  background-color: #689572;
-  color: #fff;
 }
 .hero .hero__button {
   margin-top: 1.5em;
@@ -200,6 +199,32 @@
 }
 .footer .footer__icon--cup {
   transform: scaleX(-1);
+}
+
+.contact .contact__container {
+  display: flex;
+}
+.contact .contact__item {
+  margin-top: 0.5em;
+}
+.contact .contact__label {
+  font-style: "Rammetto One", cursive;
+  color: #fff;
+}
+.contact .contact__form-list {
+  list-style: none;
+  margin-right: 0;
+  padding: 0;
+}
+.contact .contact__label {
+  margin-top: 5em;
+}
+.contact .contact__button {
+  padding: 0.5em 1em;
+  background-color: #faa196;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
