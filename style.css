@@ -56,9 +56,10 @@
   margin-top: 1.5em;
   padding: 12px 36px;
   color: #fff;
+  font-size: 1.25em;
   font-weight: 700;
   background-color: #689572;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
 }
 .hero .hero__title {
   font-family: "Rammetto One", cursive;
@@ -147,8 +148,9 @@
   justify-content: center;
   align-items: center;
   margin: 0 5em;
-  padding: 2em;
+  padding: 0.5em;
   font-family: "Open Sans", sans-serif;
+  color: #404040;
 }
 .reviews .reviews__card {
   width: 45%;
@@ -182,11 +184,11 @@
   width: 100vw;
   background-color: #82a289;
   font-family: "Open Sans", sans-serif;
-  font-size: 0.75em;
+  font-size: 1em;
   color: #fff;
 }
 .footer .footer__icon {
-  font-size: 2em;
+  font-size: 2.25em;
 }
 .footer .footer__icon--cup {
   transform: scaleX(-1);

@@ -67,9 +67,10 @@
     margin-top: 1.5em;
     padding: 12px 36px;
     color: #fff;
+    font-size: 1.25em;
     font-weight: f.$weight-bold;
     background-color: c.$spring-forest;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
   }
 
   .hero__title {
@@ -162,8 +163,9 @@
     justify-content: center;
     align-items: center;
     margin: 0 5em;
-    padding: 2em;
+    padding: 0.5em;
     font-family: f.$font-open-sans;
+    color: c.$bauhaus;
   }
   .reviews__card {
     width: 45%;
@@ -200,10 +202,10 @@
   width: 100vw;
   background-color: c.$track-green;
   font-family: f.$font-open-sans;
-  font-size: 0.75em;
+  font-size: 1em;
   color: #fff;
   .footer__icon {
-    font-size: 2em;
+    font-size: 2.25em;
   }
   .footer__icon--cup {
     transform: scaleX(-1);
