@@ -18,25 +18,27 @@
   </head>
   <body>
     <header class="header">
-      <a href="#home" class="header__icon"
-        ><i class="active fa-solid fa-mug-hot"></i
-      ></a>
+      <a href="#home" class="header__logo">
+        <i class="header__logo-icon fa-solid fa-mug-hot"></i>
+      </a>
       <nav class="header__nav">
-        <a href="#aboutSection" class="header__link">ABOUT</a>
-        <a a href="#contactSection" class="header__link">CONTACT</a>
+        <a href="#about" class="header__nav-link">ABOUT</a>
+        <a a href="#contact" class="header__nav-link">CONTACT</a>
       </nav>
     </header>
-    <section class="section hero">
-      <div class="hero__item hero__left">
+
+    <section class="hero" id="home">
+      <!-- hero__left to go??? -->
+      <div class="hero__content hero__left">
+        <!-- hero__inner to go??? -->
         <div class="hero__inner">
           <h1 class="hero__title">The Pink Coffee Corner</h1>
           <h3 class="hero__tagline">Best coffee in Melbourne</h3>
-          <a href="#reviews-id"
-            ><button class="hero__button">See reviews</button></a
-          >
+          <a href="#reviews" class="hero__button">See reviews </a>
         </div>
       </div>
-      <div class="hero__item hero__right">
+      <!-- hero__right to go??? -->
+      <div class="hero__content hero__image-wrapper">
         <img
           src="./images/hero_image.jpg"
           alt="Sunlit cafe with tall windows and a view of trees"
@@ -46,155 +48,154 @@
     </section>
 
     <main>
-      <section class="section menu">
-        <div class="menu__heading">
-          <h2 class="menu__title">Our Menu</h2>
-        </div>
+      <section class="menu" id="menu">
+        <h2 class="menu__title">Our Menu</h2>
 
         <!-- FOOD SECTION -->
-        <section class="section menu__food">
-          <details>
+        <!-- menu__category--food to go??? -->
+        <div class="menu__category menu__category--food">
+          <details class="menu__details">
             <summary class="menu__summary">Food</summary>
-            <div class="menu__container">
+            <div class="menu__list">
               <!-- 1 -->
-              <div class="menu__card">
+              <div class="menu__item">
                 <img
                   src="./images/chocolate_cupcake.jpg"
                   alt="Chocolate Cupcake"
-                  class="menu__image"
+                  class="menu__item-image"
                 />
-                <h3 class="menu__card-heading">Chocolate Cupcake</h3>
-                <div class="menu__tags">
-                  <p><i class="menu__icons fa-solid fa-leaf"></i> Vegan</p>
+                <h3 class="menu__item-name">Chocolate Cupcake</h3>
+                <div class="menu__item-tags">
+                  <p><i class="menu__icon fa-solid fa-leaf"></i> Vegan</p>
                 </div>
               </div>
               <!-- 2 -->
-              <div class="menu__card">
+              <div class="menu__item">
                 <img
                   src="./images/donuts.jpg"
                   alt="Donuts"
-                  class="menu__image"
+                  class="menu__item-image"
                 />
-                <h3 class="menu__card-heading">Donuts</h3>
-                <div class="menu__tags">
+                <h3 class="menu__item-name">Donuts</h3>
+                <div class="menu__item-tags">
                   <p>
                     <i
-                      class="menu__icons fa-solid fa-wheat-awn-circle-exclamation"
+                      class="menu__icon fa-solid fa-wheat-awn-circle-exclamation"
                     ></i>
                     Gluten Free
                   </p>
                 </div>
               </div>
               <!-- 3 -->
-              <div class="menu__card">
+              <div class="menu__item">
                 <img
                   src="./images/raspberry_cupcake.jpg"
                   alt="Raspberry Cupcake"
-                  class="menu__image"
+                  class="menu__item-image"
                 />
-                <h3 class="menu__card-heading">Raspberry Cupcake</h3>
-                <div class="menu__tags flex">
-                  <p><i class="menu__icons fa-solid fa-leaf"></i> Vegan</p>
+                <h3 class="menu__item-name">Raspberry Cupcake</h3>
+                <div class="menu__item-tags flex">
+                  <p><i class="menu__icon fa-solid fa-leaf"></i> Vegan</p>
                   <p>
                     <i
-                      class="menu__icons fa-solid fa-wheat-awn-circle-exclamation"
+                      class="menu__icon fa-solid fa-wheat-awn-circle-exclamation"
                     ></i>
                     Gluten Free
                   </p>
                 </div>
               </div>
               <!-- 4 -->
-              <div class="menu__card">
+              <div class="menu__item">
                 <img
                   src="./images/vanilla_cake.jpg"
                   alt="Vanilla Cake"
-                  class="menu__image"
+                  class="menu__item-image"
                 />
-                <h3 class="menu__card-heading">Vanilla Cake</h3>
-                <div class="menu__tags">
+                <h3 class="menu__item-name">Vanilla Cake</h3>
+                <div class="menu__item-tags">
                   <p>
-                    <i class="menu__icons fa-solid fa-egg"></i> Contains Eggs
+                    <i class="menu__icon fa-solid fa-egg"></i> Contains Eggs
                   </p>
                 </div>
               </div>
-              <!-- <div class="menu__card"></div> -->
+              <!-- <div class="menu__item"></div> -->
               <!-- 5 -->
-              <div class="menu__card">
+              <div class="menu__item">
                 <img
                   src="./images/cheesecake.jpg"
                   alt="Cheesecake"
-                  class="menu__image"
+                  class="menu__item-image"
                 />
-                <h3 class="menu__card-heading">Cheesecake</h3>
-                <div class="menu__tags flex">
+                <h3 class="menu__item-name">Cheesecake</h3>
+                <div class="menu__item-tags flex">
                   <p>
-                    <i class="menu__icons fa-solid fa-egg"></i> Contains Eggs
+                    <i class="menu__icon fa-solid fa-egg"></i> Contains Eggs
                   </p>
                   <p>
-                    <i class="menu__icons fa-solid fa-cow"></i> Contains Dairy
+                    <i class="menu__icon fa-solid fa-cow"></i> Contains Dairy
                   </p>
                 </div>
               </div>
             </div>
           </details>
-        </section>
+        </div>
 
         <!-- DRINKS SECTION -->
-        <section class="section menu__drinks">
+        <div class="menu__category menu__category--drinks">
           <details>
             <summary class="menu__summary">Drinks</summary>
-            <div class="menu__container">
-              <div class="menu__card">
+            <div class="menu__list">
+              <div class="menu__item">
                 <img
                   src="./images/coffee.jpg"
                   alt="Flat White"
-                  class="menu__image"
+                  class="menu__item-image"
                 />
-                <h3 class="menu__card-heading">Flat White</h3>
-                <div class="menu__tags">
+                <h3 class="menu__item-name">Flat White</h3>
+                <div class="menu__item-tags">
                   <span
-                    ><i class="menu__icons fa-solid fa-leaf"></i> Vegan Options
+                    ><i class="menu__icon fa-solid fa-leaf"></i> Vegan Options
                     Available</span
                   >
                 </div>
               </div>
-              <div class="menu__card">
+              <div class="menu__item">
                 <img
                   src="./images/green_smoothie.jpg"
                   alt="Green Smoothie"
-                  class="menu__image"
+                  class="menu__item-image"
                 />
-                <h3 class="menu__card-heading">Green Smoothie</h3>
-                <div class="menu__tags">
+                <h3 class="menu__item-name">Green Smoothie</h3>
+                <div class="menu__item-tags">
                   <span>
-                    <i class="menu__icons fa-solid fa-leaf"></i> Vegan Options
+                    <i class="menu__icon fa-solid fa-leaf"></i> Vegan Options
                     Available
                   </span>
                 </div>
               </div>
-              <div class="menu__card">
+              <div class="menu__item">
                 <img
                   src="./images/peanut_smoothie.jpg"
                   alt="Green Smoothie"
-                  class="menu__image"
+                  class="menu__item-image"
                 />
-                <h3 class="menu__card-heading">Peanut Butter Smoothie</h3>
-                <div class="menu__tags wrap">
+                <h3 class="menu__item-name">Peanut Butter Smoothie</h3>
+                <div class="menu__item-tags wrap">
                   <p>
-                    <i class="menu__icons fa-solid fa-leaf"></i> Vegan Options
+                    <i class="menu__icon fa-solid fa-leaf"></i> Vegan Options
                     Available
                   </p>
                   <p>
-                    <i class="menu__icons fa-solid fa-hand-dots"></i> Contains
+                    <i class="menu__icon fa-solid fa-hand-dots"></i> Contains
                     Nuts
                   </p>
                 </div>
               </div>
             </div>
           </details>
-        </section>
+        </div>
       </section>
-      <section class="section reviews" id="reviews-id">
+      <section class="section reviews" id="reviews">
         <h2 class="reviews__heading">Reviews</h2>
         <div class="reviews__container">
           <div class="reviews__card">

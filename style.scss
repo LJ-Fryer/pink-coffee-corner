@@ -1,10 +1,6 @@
 @use "./partials/colors" as c;
 @use "./partials/fonts" as f;
 
-// section {
-//   display: flex;
-// }
-
 *,
 *::before,
 *::after {
@@ -21,7 +17,7 @@
   align-items: center;
   width: 90vw;
 
-  .header__icon {
+  .header__logo {
     color: c.$peach-amber;
     font-size: 2em;
     transform: scaleX(-1);
@@ -32,7 +28,7 @@
     justify-content: space-between;
     width: 20%;
 
-    .header__link {
+    .header__nav-link {
       font-size: 0.75em;
       font-weight: f.$weight-bold;
       color: c.$bauhaus;
@@ -49,7 +45,7 @@
 .hero {
   display: flex;
 
-  .hero__item {
+  .hero__content {
     width: 50%;
     height: auto;
     display: flex;
@@ -58,6 +54,8 @@
   }
   .hero__inner {
     width: 70%;
+    display: flex;
+    flex-direction: column;
   }
   .hero__left {
     background-color: c.$spring-forest;
@@ -66,8 +64,11 @@
   .hero__button {
     margin-top: 1.5em;
     padding: 12px 36px;
+    width: 40%;
+    height: auto;
     color: #fff;
-    font-size: 1.25em;
+    font-family: f.$font-open-sans;
+    font-size: 1em;
     font-weight: f.$weight-bold;
     background-color: c.$spring-forest;
     border: 3px solid #fff;
@@ -102,6 +103,9 @@
     font-weight: f.$weight-bold;
     font-size: 2.25em;
   }
+  .menu__category {
+    margin-top: 3em;
+  }
   .menu__summary {
     padding: 0.5em 1.5em;
     background-color: c.$fairy-floss;
@@ -109,14 +113,14 @@
     color: c.$bauhaus;
     font-weight: f.$weight-bold;
   }
-  .menu__container {
+  .menu__list {
     display: flex;
     margin: 10px;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
   }
-  .menu__card {
+  .menu__item {
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -125,12 +129,12 @@
     height: 420px;
     background-color: c.$fairy-floss;
   }
-  .menu__image {
+  .menu__item-image {
     max-width: 90%;
     height: auto;
     padding: 15px 5px 20px;
   }
-  .menu__tags {
+  .menu__item-tags {
     margin-top: 1em;
     font-size: 0.75em;
     text-align: center;
@@ -140,7 +144,7 @@
     justify-content: space-between;
   }
 
-  .menu__icons {
+  .menu__icon {
     color: c.$spring-forest;
     font-weight: f.$weight-bold;
   }
