@@ -37,13 +37,14 @@
   }
 }
 
-.section {
-  margin-top: 1em;
-}
+// .section {
+//   margin-top: 1em;
+// }
 
 // HERO
 .hero {
   display: flex;
+  margin-top: 1em;
 
   .hero__content {
     width: 50%;
@@ -92,7 +93,9 @@
 .menu {
   display: flex;
   flex-direction: column;
+  margin-top: 1.5em;
   padding: 0 10%;
+
   font-family: f.$font-open-sans;
   color: c.$bauhaus;
 
@@ -104,7 +107,7 @@
     font-size: 2.25em;
   }
   .menu__category {
-    margin-top: 3em;
+    margin-top: 1.5em;
   }
   .menu__summary {
     padding: 0.5em 1.5em;
@@ -153,15 +156,16 @@
 .reviews {
   height: 80vh;
   background-color: c.$peach-amber;
+  margin-top: 2em;
 
-  .reviews__heading {
+  .reviews__title {
     padding-top: 1em;
     font-family: f.$font-rammetto;
     font-size: 2.5em;
     color: #fff;
     text-align: center;
   }
-  .reviews__container {
+  .reviews__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -171,25 +175,25 @@
     font-family: f.$font-open-sans;
     color: c.$bauhaus;
   }
-  .reviews__card {
+  .reviews__item {
     width: 45%;
     margin: 0.5em;
     padding: 1em;
     border: 2px solid#fff;
   }
-  .reviews__top {
+  .reviews__quote {
     display: flex;
+  }
+  .reviews__text {
+    padding: 0 10px;
+    text-align: center;
     font-weight: f.$weight-bold;
     font-style: f.$style-italic;
     font-size: 1em;
   }
-  .reviews--padding {
-    padding: 0 10px;
-    text-align: center;
-  }
-  // .reviews__quote--right {
+  // .reviews__quote-icon--right {
   // }
-  .reviews__bottom {
+  .reviews__meta {
     display: flex;
     margin-top: 1em;
     padding: 0 0.75em;
@@ -210,6 +214,7 @@
   color: #fff;
   .footer__icon {
     font-size: 2.25em;
+    color: #fff;
   }
   .footer__icon--cup {
     transform: scaleX(-1);
