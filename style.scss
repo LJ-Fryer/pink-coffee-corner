@@ -28,10 +28,11 @@
   .header__nav {
     display: flex;
     justify-content: space-between;
-    width: 15%;
+    width: 20%;
 
-    .header__nav-link {
-      font-size: 0.8em;
+    .header__link {
+      font-size: 0.75em;
+      font-weight: f.$weight-bold;
       color: c.$bauhaus;
       text-decoration: none;
     }
@@ -48,6 +49,7 @@
 
   .hero__item {
     width: 50%;
+    height: auto;
   }
   .hero__item-inner {
     padding: 20%;
@@ -72,6 +74,9 @@
     font-weight: f.$weight-regular;
   }
   .hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
